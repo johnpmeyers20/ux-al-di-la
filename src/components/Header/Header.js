@@ -1,13 +1,18 @@
 import React from "react"
 import './Header.css'
+import { Link } from "react-router-dom"
 
 const header = () => {
   return (
     <header>
-      <nav></nav>
+      <nav>
+        <Link to="">Menu</Link>
+        <Link to=""></Link>
+        <Link to=""></Link>
+        <Link to=""></Link>
+      </nav>
       <div>
-        HEADER
-        <img src="https://drive.google.com/open?id=1wOKiG9RRpOFa9Hc2PxZAHFqafZmWfmtK" />
+        <img />
       </div>
     </header>
   )
