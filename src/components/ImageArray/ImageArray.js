@@ -1,7 +1,7 @@
 import React from 'react'
-import './Press.css'
+import './ImageArray.css'
 
-const Press = () => {
+const ImageArray = () => {
   return (
     <div>
       <img src='' alt='img' />
@@ -12,4 +12,4 @@ const Press = () => {
   )
 }
 
-export default Press
+export default ImageArray
