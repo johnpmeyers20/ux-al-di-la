@@ -1,16 +1,16 @@
 visit {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* height: 80%; */
+  /* align-items: center; */
 }
 
 .visit-image, .visit-box {
-  max-width: 50%;
+  width: 50%;
+  height: 60vh;
 } 
 
 .visit-box {
-  font-size: 20px;
-  padding: 55px 40px;
+  font-size: 24px;
+  padding: 40px;
   background-color: #fec91d;
 }
