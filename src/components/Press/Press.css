@@ -1,8 +1,11 @@
 press {
   background-color: black;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+
+press img {
+  margin: 20px;
 }
