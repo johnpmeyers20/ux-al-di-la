@@ -6,9 +6,6 @@ import MenuLunch from '../MenuLunch/MenuLunch'
 import MenuDinner from '../MenuDinner/MenuDinner'
 import MenuDessert from '../MenuDessert/MenuDessert'
 
-
-
-
 const Menu = () => {
   return (
     <div className='menu-container'>
