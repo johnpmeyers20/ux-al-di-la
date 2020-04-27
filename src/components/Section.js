@@ -6,7 +6,7 @@ import MenuLunch from '../components/MenuLunch/MenuLunch'
 import MenuDinner from '../components/MenuDinner/MenuDinner'
 import MenuDessert from '../components/MenuDessert/MenuDessert'
 
-export default function Section({ dark, id }) {
+export default function Menu({ dark, id }) {
   return (
     <div className={"section" + (dark ? " section-dark" : "")}>
       <div className="section-content" id={id}>

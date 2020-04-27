@@ -1,18 +1,15 @@
 import React from 'react'
-import './Menu.css'
+import './Menu/Menu.css'
 import { Link, Route } from 'react-router-dom'
-import MenuBrunch from '../MenuBrunch/MenuBrunch'
-import MenuLunch from '../MenuLunch/MenuLunch'
-import MenuDinner from '../MenuDinner/MenuDinner'
-import MenuDessert from '../MenuDessert/MenuDessert'
+import MenuBrunch from '../components/MenuBrunch/MenuBrunch'
+import MenuLunch from '../components/MenuLunch/MenuLunch'
+import MenuDinner from '../components/MenuDinner/MenuDinner'
+import MenuDessert from '../components/MenuDessert/MenuDessert'
 
-
-
-
-const Menu = () => {
+export default function Menu({ dark, id }) {
   return (
-    
-    <div className='menu-container' >
+    <div className={"section" + (dark ? " section-dark" : "")}>
+      <div className="section-content" id={id}>
       <nav>
         <Link to='/' >Brunch</Link>
         <Link to='/lunch-menu' >Lunch</Link>
@@ -25,9 +22,8 @@ const Menu = () => {
         <Route path='/dinner-menu' render={MenuDinner} />
         <Route path='/dessert-menu' render={MenuDessert} />
       </div>
+        
       </div>
-     
-  )
+    </div>
+  );
 }
-
-export default Menu
