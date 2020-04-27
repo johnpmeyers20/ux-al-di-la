@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header.js'
 import Footer from './components/Footer/Footer.js'
-import AboutSectionContainer from './components/AboutSectionContainer/AboutSectionContainer.js'
 import Menu from './components/Menu/Menu.js'
 import ImageArray from './components/ImageArray/ImageArray.js'
+import About from './components/About/About.js'
+import Visit from './components/Visit/Visit.js'
 import Press from './components/Press/Press.js'
 
 
@@ -14,7 +15,8 @@ function App() {
       <Header />
       <Menu />
       <ImageArray />
-      <AboutSectionContainer />
+      <Visit />
+      <About />
       <Press />
       <Footer />
     </div>
