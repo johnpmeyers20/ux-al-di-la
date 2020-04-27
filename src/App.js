@@ -6,16 +6,19 @@ import AboutSectionContainer from './components/AboutSectionContainer/AboutSecti
 import Menu from './components/Menu/Menu.js'
 import ImageArray from './components/ImageArray/ImageArray.js'
 import Press from './components/Press/Press.js'
+import Section from './components/Section.js'
+
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Menu />
-      <ImageArray />
-      <AboutSectionContainer />
-      <Press />
+      {/* <Press id="section2"/> */}
+      <Section id="section1"/>
+      <ImageArray id="section3"/>
+      <AboutSectionContainer id="section4"/>
+      <Press id="section5"/>
       <Footer />
     </div>
   );

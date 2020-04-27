@@ -5,14 +5,17 @@ import Visit from "../Visit/Visit.js"
 import Map from "../../Images/Map.png"
 import AboutImg from "../../Images/About.png"
 
-const AboutSectionContainer = () => {
+const AboutSectionContainer = ({ Map, AboutImg, dark, id }) => {
   return (
-    <div class='about-section-container'>
+    <div className={"section" + (dark ? " section-dark" : "")}>
+   
+    <div class='about-section-container'id={id}>
       <img className='about-section-image' src={Map}/>
       <Visit />
       <About />
       <img className='about-section-image' src={AboutImg}/>
-    </div>
+      </div>
+      </div>
   )
 }
 
