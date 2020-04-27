@@ -2,9 +2,10 @@ import React from 'react'
 import './Visit.css'
 import Map from "../../Images/Map.png"
 
-const Visit = () => {
+export default function Visit({dark, id }) {
   return (
-    <visit>
+    <div className={"section" + (dark ? " section-dark" : "")}>
+      <div className="section-content" id={id}>
     <img className='visit-image' src={Map}/>
     <div className="visit-box">
       <p style={{fontSize: "26px"}}>248 5th Avenue Brooklyn, NY 11215<br/>Phone: 718-783-4565</p>
@@ -15,8 +16,8 @@ const Visit = () => {
       Brunch: Sat. & Sun. 11am - 3pm
       </p>
     </div>
-    </visit>
+      </div>
+      </div>
   )
 }
 
-export default Visit
