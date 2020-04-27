@@ -9,15 +9,19 @@ import Visit from './components/Visit/Visit.js'
 import Press from './components/Press/Press.js'
 
 
+
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <Menu />
-      <ImageArray />
-      <Visit />
-      <About />
-      <Press />
+
+      <Menu id="section1"/>
+      <ImageArray id="section3"/>
+      <Visit id="section4"/>
+      <About id="section6"/>
+      <Press id="section5"/>
+
       <Footer />
     </div>
   );
