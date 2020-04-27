@@ -2,21 +2,16 @@ import React from 'react'
 import './AboutSectionContainer.css'
 import About from "../About/About.js"
 import Visit from "../Visit/Visit.js"
-
+import Map from "../../Images/Map.png"
+import AboutImg from "../../Images/About.png"
 
 const AboutSectionContainer = () => {
   return (
     <div class='about-section-container'>
-      <div className='about-section-image'>
-        <h1>Image here</h1>
-        {/* <img src='' /> */}
-      </div>
+      <img className='about-section-image' src={Map}/>
       <Visit />
       <About />
-      <div className='about-section-image'>
-        <h1>Image here</h1>
-        {/* <img src='' /> */}
-      </div>
+      <img className='about-section-image' src={AboutImg}/>
     </div>
   )
 }
