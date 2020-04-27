@@ -5,9 +5,9 @@ import MenuBrunch from '../MenuBrunch/MenuBrunch'
 import MenuLunch from '../MenuLunch/MenuLunch'
 import MenuDinner from '../MenuDinner/MenuDinner'
 import MenuDessert from '../MenuDessert/MenuDessert'
+import Menus from './Menus.json'
 
-
-
+console.log(Menus);
 
 const Menu = () => {
   return (
