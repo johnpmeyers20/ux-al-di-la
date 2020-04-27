@@ -50,7 +50,7 @@
 }
 
 .section-content {
-  max-width: 800px;
+  width:100vw;
   margin: 0 auto;
   padding: 40px;
 }
