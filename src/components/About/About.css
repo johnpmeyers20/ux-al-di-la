@@ -2,3 +2,7 @@
   border: 1px solid slateblue;
   width: 100%;
 }
+
+.about-description {
+  font-size: 1.4em;
+}
