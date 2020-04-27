@@ -7,14 +7,14 @@ import Press4 from "../../Images/Press-4.png"
 
 const Press = ({ Press1, Press2, Press3, Press4, dark, id }) => {
   return (
-    <div className={"section" + (dark ? " section-dark" : "")}>
-    <div id={id}>
-      <img src={Press1} alt='press image' />
-      <img src={Press2} alt='press image' />
-      <img src={Press3} alt='press image' />
-      <img src={Press4} alt='press image' />
-      </div>
-      </div>
+
+    <press>
+      <a href="https://tmagazine.blogs.nytimes.com/2014/08/28/al-di-la-vino-sunday-night-dinner/"><img src={Press1}/></a>
+      <a href="https://www.cntraveler.com/restaurants/brooklyn/al-di-la-trattoria"><img src={Press2}/></a>
+      <a href="https://www.timeout.com/newyork/restaurants/al-di-la-vino"><img src={Press3}/></a>
+      <a href="https://www.wsj.com/articles/brooklyn-restaurant-reaches-far-with-challenging-wines-1379037898"><img src={Press4}/></a>
+    </press>
+
   )
 }
 

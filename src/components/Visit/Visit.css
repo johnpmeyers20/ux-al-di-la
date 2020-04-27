@@ -1,4 +1,16 @@
+visit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 80%; */
+}
+
+.visit-image, .visit-box {
+  max-width: 50%;
+} 
+
 .visit-box {
-  border: 2px solid blue;
-  width: 100%;
+  font-size: 20px;
+  padding: 55px 40px;
+  background-color: #fec91d;
 }
