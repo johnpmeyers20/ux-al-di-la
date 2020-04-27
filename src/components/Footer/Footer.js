@@ -6,9 +6,11 @@ import Ig from "../../Images/Instagram.svg"
 const Footer = () => {
   return (
     <footer>
-      <h2>&copy;2020 al di là, All Rights Reserved</h2>
-      <img src={Fb} />
-      <img src={Ig} />
+      <p>&copy;2020 al di là, All Rights Reserved</p>
+      <div>
+        <img className="fb-link"src={Fb} />
+        <img src={Ig} />
+      </div>
     </footer>
   )
 }
