@@ -22,10 +22,10 @@ class Menu extends Component {
     return (
       <div className='menu-container'>
         <nav>
-          <Link to='/' >Brunch</Link>
-          <Link to='/lunch-menu' >Lunch</Link>
-          <Link to='/dinner-menu' >Dinner</Link>
-          <Link to='/dessert-menu' >Dessert</Link>
+          <Link to='/'>Brunch</Link>
+          <Link to='/lunch-menu'>Lunch</Link>
+          <Link to='/dinner-menu'>Dinner</Link>
+          <Link to='/dessert-menu'>Dessert</Link>
         </nav>
         <div className='current-menu'>
           <Route exact path='/' render={MenuBrunch} />
