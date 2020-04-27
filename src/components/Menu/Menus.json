@@ -114,10 +114,82 @@ const menuCopy = [
   "Lunch": {
     "items": [
       {
-        "type": "Eggs and Breakfast",
-        "dish": "Frittata of the day",
+        "type": "Antipasti",
+        "dish": "Insalata di Farro",
+        "cost": 16,
+        "caption": "Warm spelt salad, roasted squash and cauliflower, red onion, greens, hazelnuts, goat cheese, brown butter sherry vinaigrette",
+      },
+      {
+        "type": "Antipasti",
+        "dish": "Dried Fava Puree and Dandelion",
         "cost": 15,
-        "caption": "Served with mixed greens",
+        "caption": "",
+      },
+      {
+        "type": "Antipasti",
+        "dish": "Winter White Salad",
+        "cost": 15.50,
+        "caption": "A selection of raw shaved white vegetables, champagne vinaigrette, crumbled Castelmagno cheese",
+      },
+      {
+        "type": "Antipasti",
+        "dish": "Orange Salad",
+        "cost": 14,
+        "caption": "Navel, Cara Cara, blood oranges, red onion, fennel, mint, pomegranate seeds",
+      },
+      {
+        "type": "Antipasti",
+        "dish": "Cavolo Nero Salad",
+        "cost": 15.50,
+        "caption": "Tuscan kale, croutons, parmigiano, anchovy vinaigrette",
+      },
+      {
+        "type": "Panini",
+        "dish": "Crispy Pork Belly",
+        "cost": 16,
+        "caption": "Crispy Heritage pork belly, seasonal pickles, horseradish mayo, salsa verde",
+      },
+      {
+        "type": "Panini",
+        "dish": "Grilled Fish Sandwich",
+        "cost": 16,
+        "caption": "Lemon aioli, cucumbers, chili oil, arugula, seasonal pickles",
+      },
+      {
+        "type": "Pasta",
+        "dish": "Spaghetti Chitarra alla Carbonara",
+        "cost": 16,
+        "caption": "Guanciale, black pepper, pecorino",
+      },
+      {
+        "type": "Pasta",
+        "dish": "Tagliatelle al Ragu'",
+        "cost": 17.50,
+        "caption": "",
+      },
+      {
+        "type": "Pasta",
+        "dish": "Ricotta Cavatelli",
+        "cost": 16.50,
+        "caption": "Roasted Cauliflower, anchovy, chili, tomato, pecorino",
+      },
+      {
+        "type": "Pasta",
+        "dish": "Malfatti",
+        "cost": 17,
+        "caption": "Swiss chard and ricotta gnocchi with brown butter and sage",
+      },
+      {
+        "type": "Pasta",
+        "dish": "Ricotta and Lemon Ravioli",
+        "cost": 17,
+        "caption": "Tomato, Parmigiano",
+      },
+      {
+        "type": "Piatti Caldi",
+        "dish": "Trippa alla Toscana",
+        "cost": 15.50,
+        "caption": "Add poached egg $1.50",
       },
     ]
   },
@@ -134,11 +206,41 @@ const menuCopy = [
   "Dessert": {
     "items": [
       {
-        "type": "Eggs and Breakfast",
-        "dish": "Frittata of the day",
-        "cost": 15,
-        "caption": "Served with mixed greens",
+        "type": "Dessert",
+        "dish": "Frittole",
+        "cost": 12,
+        "caption": "Ricotta Fritters served with warm chocolate sauce and vanilla whipped cream"
       },
+      {
+        "type": "Dessert",
+        "dish": "Torta di Pere e Cioccolato",
+        "cost": 10,
+        "caption": "Pear Cake with bitter chocolate chunks.  Served warm with whipped cream"
+      },
+      {
+        "type": "Dessert",
+        "dish": "Gianduiotto",
+        "cost": 10,
+        "caption": "Chocolate ice cream with Hazelnuts served in a tall glass with whipped cream"
+      },
+      {
+        "type": "Dessert",
+        "dish": "Affogato al Caffè",
+        "cost": 10,
+        "caption": "Vanilla ice cream and crushed Almond praline drowned in decaffeinated hot Espresso"
+      },
+      {
+        "type": "Dessert",
+        "dish": "Sorbetti di Frutta & Gelati",
+        "cost": 12,
+        "caption": "All ice creams and sorbets are homemade"
+      },
+      {
+        "type": "Dessert",
+        "dish": "Piatto dei Formaggi",
+        "cost": 12,
+        "caption": "An assortment of artisanal cheese"
+      }
     ]
-  },
+  }
 ]
