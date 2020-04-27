@@ -10,17 +10,15 @@ import Menus from './Menus.json'
 
 console.log(Menus);
 
-class Menu extends Component {
-  constructor() {
-    super()
-    this.state = {
-      menus: Menus
-    }
-  }
-  render() {
-    console.log(this.state.menus.Dinner)
+export default function Menu({dark, id}){
+ 
+   
+  
+  
+  
     return (
-      <div>
+      <div className={"section" + (dark ? " section-dark" : "")}>
+      <div className="section-content" id={id}>
         <nav className='menu-nav-container'>
           <Link className="menu-section-title" to='/'>brunch</Link>
           <Link className="menu-section-title" to='/lunch-menu'>lunch</Link>
@@ -34,10 +32,13 @@ class Menu extends Component {
             <MenuDinner menu={this.state.menus.Dinner} />} />
           <Route path='/dessert-menu' render={MenuDessert} />
         </div>
-      </div>
+        </div>
+        </div>
     )
   }
 
-}
 
-export default Menu;
+
+
+
+
