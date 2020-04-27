@@ -5,7 +5,7 @@ import Press2 from "../../Images/Press-2.png"
 import Press3 from "../../Images/Press-3.png"
 import Press4 from "../../Images/Press-4.png"
 
-const Press = ({ Press1, Press2, Press3, Press4, dark, id }) => {
+const Press = () => {
   return (
 
     <press>
