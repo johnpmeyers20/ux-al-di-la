@@ -20,12 +20,12 @@ class Menu extends Component {
   render() {
     console.log(this.state.menus.Dinner)
     return (
-      <div className='menu-container'>
-        <nav>
-          <Link to='/'>Brunch</Link>
-          <Link to='/lunch-menu'>Lunch</Link>
-          <Link to='/dinner-menu'>Dinner</Link>
-          <Link to='/dessert-menu'>Dessert</Link>
+      <div>
+        <nav className='menu-nav-container'>
+          <Link className="menu-section-title" to='/'>brunch</Link>
+          <Link className="menu-section-title" to='/lunch-menu'>lunch</Link>
+          <Link className="menu-section-title" to='/dinner-menu'>dinner</Link>
+          <Link className="menu-section-title" to='/dessert-menu'>dessert</Link>
         </nav>
         <div className='current-menu'>
           <Route exact path='/' render={MenuBrunch} />
