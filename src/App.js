@@ -15,13 +15,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <Menu id="section1"/>
       <ImageArray id="section3"/>
       <Visit id="section4"/>
       <About id="section6"/>
       <Press id="section5"/>
-
       <Footer />
     </div>
   );
