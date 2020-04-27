@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom'
+// import './fonts/Brandon_reg.otf'
+import './fonts/Brandon_med.otf'
 
 ReactDOM.render(
   <Router>

@@ -7,12 +7,12 @@ import Press4 from "../../Images/Press-4.png"
 
 const Press = () => {
   return (
-    <div>
+    <press>
       <img src={Press1} alt='press image' />
       <img src={Press2} alt='press image' />
       <img src={Press3} alt='press image' />
       <img src={Press4} alt='press image' />
-    </div>
+    </press>
   )
 }
 
