@@ -1,8 +1,19 @@
-.about-box {
-  border: 1px solid slateblue;
-  width: 100%;
+about {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
-.about-description {
-  font-size: 1.4em;
+.about-box {
+  padding: 3% 30px;
+  background-color: #fec91d;
 }
+.about-box h2 {
+  font-size: 36px;
+}
+.about-image, .about-box {
+  width: 50%;
+  height: 60vh;
+}
+
+ /* @media (min-width:) */
