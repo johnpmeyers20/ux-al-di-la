@@ -14,7 +14,7 @@ const header = () => {
         <Link to=''>Press</Link>
       </nav>
       <div>
-        <img className='hero-image' src='/Hero.png' alt='Hero' />
+        <img className='hero-image' src='Hero.png' alt='Hero' />
       </div>
     </header>
   )
