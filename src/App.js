@@ -15,14 +15,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-
-
       <Menu id="section1" />
-      <Visit id="section2" />
-
-    
-
       <ImageArray id="section3"/>
+      <Visit id="section2" />
       <About id="section4"/>
       <Press id="section5"/>
       <Footer />

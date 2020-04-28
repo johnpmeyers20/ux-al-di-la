@@ -1,7 +1,6 @@
 about {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   font-family: 'Brandon Bold';
   line-height: 1.25;
 }
