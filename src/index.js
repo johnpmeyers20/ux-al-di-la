@@ -5,6 +5,7 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom'
 // import './fonts/Brandon_reg.otf'
 import './fonts/Brandon_med.otf'
+import './fonts/Brandon_bld.otf'
 
 ReactDOM.render(
   <Router>

@@ -1,6 +1,4 @@
-
 import React, { Component } from "react";
-
 import { Link, animateScroll as scroll } from "react-scroll";
 import Logo from '../../Images/al_di_la_logo.svg'
 import Hero from '../../Images/Hero.png'

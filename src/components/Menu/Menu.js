@@ -8,19 +8,18 @@ import MenuDinner from '../MenuDinner/MenuDinner'
 import MenuDessert from '../MenuDessert/MenuDessert'
 import Menus from './Menus.json'
 
+
 console.log(Menus);
 
-class Menu extends Component {
-  constructor() {
-    super()
-    this.state = {
-      menus: Menus
-    }
-  }
-  render() {
-    console.log(this.state.menus.Dinner)
+export default function Menu({dark, id}){
+ 
+   
+  
+  
+  
     return (
-      <div>
+      <div className={"section" + (dark ? " section-dark" : "")}>
+      <div className="section-content" id={id}>
         <nav className='menu-nav-container'>
           <Link className="menu-section-title" id="brunch" to='/'>brunch</Link>
           <Link className="menu-section-title" id="lunch" to='/lunch-menu'>lunch</Link>
@@ -33,10 +32,18 @@ class Menu extends Component {
           <Route path='/dinner-menu' render={() => <MenuDinner menu={this.state.menus.Dinner} />} />
           <Route path='/dessert-menu' render={() => <MenuDessert menu={this.state.menus.Dessert} />} />
         </div>
-      </div>
+
+        </div>
+        </div>
+
+
+     
+
     )
   }
 
-}
 
-export default Menu;
+
+
+
+

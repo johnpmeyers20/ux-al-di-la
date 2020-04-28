@@ -16,12 +16,15 @@ function App() {
     <div className="App">
       <Header />
 
-      <Menu id="section1"/>
-      <ImageArray id="section3"/>
-      <Visit id="section4"/>
-      <About id="section6"/>
-      <Press id="section5"/>
 
+      <Menu id="section1" />
+      <Visit id="section2" />
+
+    
+
+      <ImageArray id="section3"/>
+      <About id="section4"/>
+      <Press id="section5"/>
       <Footer />
     </div>
   );

@@ -9,3 +9,8 @@ body {
   font-family: 'Brandon';
   src: local('Brandon'), url(./fonts/Brandon_med.otf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Brandon Bold';
+  src: local('Brandon'), url(./fonts/Brandon_bld.otf) format('truetype');
+}
