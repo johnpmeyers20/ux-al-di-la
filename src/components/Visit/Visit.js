@@ -5,7 +5,7 @@ import Map from "../../Images/Map.png"
 export default function Visit({ id }) {
   return (
 
-    <visit className="section-content" id={id}>
+    <visit id={id}>
     <div className='visit-image' style={{ backgroundImage: "url(" + Map + ")", backgroundSize: "cover", padding:"40px" }}></div>
     <div className='visit-box'>
       <p style={{fontSize: "26px"}}>248 5th Avenue Brooklyn, NY 11215<br/>Phone: 718-783-4565</p>
