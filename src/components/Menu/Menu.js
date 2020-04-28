@@ -22,17 +22,16 @@ class Menu extends Component {
     return (
       <div>
         <nav className='menu-nav-container'>
-          <Link className="menu-section-title" to='/'>brunch</Link>
-          <Link className="menu-section-title" to='/lunch-menu'>lunch</Link>
-          <Link className="menu-section-title" to='/dinner-menu'>dinner</Link>
-          <Link className="menu-section-title" to='/dessert-menu'>dessert</Link>
+          <Link className="menu-section-title" id="brunch" to='/'>brunch</Link>
+          <Link className="menu-section-title" id="lunch" to='/lunch-menu'>lunch</Link>
+          <Link className="menu-section-title" id="dinner" to='/dinner-menu'>dinner</Link>
+          <Link className="menu-section-title" id="dessert" to='/dessert-menu'>dessert</Link>
         </nav>
         <div className='current-menu'>
-          <Route exact path='/' render={MenuBrunch} />
-          <Route path='/lunch-menu' render={MenuLunch} />
-          <Route path='/dinner-menu' render={() =>
-            <MenuDinner menu={this.state.menus.Dinner} />} />
-          <Route path='/dessert-menu' render={MenuDessert} />
+          <Route exact path='/' render={() => <MenuBrunch menu={this.state.menus.Brunch} />} />
+          <Route path='/lunch-menu' render={() => <MenuLunch menu={this.state.menus.Lunch} />} />
+          <Route path='/dinner-menu' render={() => <MenuDinner menu={this.state.menus.Dinner} />} />
+          <Route path='/dessert-menu' render={() => <MenuDessert menu={this.state.menus.Dessert} />} />
         </div>
       </div>
     )

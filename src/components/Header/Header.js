@@ -5,6 +5,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Logo from '../../Images/al_di_la_logo.svg'
 import Hero from '../../Images/Hero.png'
 import "../Header/Header.css"
+
 export default class Header extends Component {
   scrollToTop = () => {
     scroll.scrollToTop();

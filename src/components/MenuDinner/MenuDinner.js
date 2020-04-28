@@ -9,34 +9,30 @@ const MenuDinner = (props) => {
       <h3 className="menu-section-title">Antipasti</h3>
       {items.filter(item => item.type === "Antipasti").map(item => {
         return (
-          <nav>
-            <h4 className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}</h4>
-            <h4 className="menu-caption">{item.caption}</h4>
-          </nav>)
+          <div>
+            <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
+          </div>)
       })}
       <h3 className="menu-section-title">Primi</h3>
       {items.filter(item => item.type === "Primi").map(item => {
         return (
-          <nav>
-            <h4 className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}</h4>
-            <h4 className="menu-caption">{item.caption}</h4>
-          </nav>)
+          <div>
+            <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
+          </div>)
       })}
       <h3 className="menu-section-title">Secondi</h3>
       {items.filter(item => item.type === "Secondi").map(item => {
         return (
-          <nav>
-            <h4 className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}</h4>
-            <h4 className="menu-caption">{item.caption}</h4>
-          </nav>)
+          <div>
+            <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
+          </div>)
       })}
       <h3 className="menu-section-title">Contorni</h3>
       {items.filter(item => item.type === "Contorni").map(item => {
         return (
-          <nav>
-            <h4 className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}</h4>
-            <h4 className="menu-caption">{item.caption}</h4>
-          </nav>)
+          <div>
+            <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
+          </div>)
       })}
     </div>
   )

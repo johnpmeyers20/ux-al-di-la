@@ -1,10 +1,19 @@
 import React from 'react'
 import './MenuDessert.css'
 
-const MenuDessert = () => {
+
+const MenuDessert = (props) => {
+  let items = props.menu.items;
+  console.log(items);
   return (
-    <div>
-      <h1>This is the dessert menu</h1>
+    <div className="menu-container">
+      <h3 className="menu-section-title">Dessert</h3>
+      {items.filter(item => item.type === "Dessert").map(item => {
+        return (
+          <div>
+            <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
+          </div>)
+      })}
     </div>
   )
 }
