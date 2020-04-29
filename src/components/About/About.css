@@ -3,19 +3,33 @@ about {
   justify-content: center;
   font-family: 'Brandon Bold';
   line-height: 1.25;
+  height: 500px;
 }
 
-.about-image, .about-box {
+/* .about-image, .about-box {
   width: 50%;
-  height: 60vh;
-} 
+  height: 100%; 
+}  */
+
+.about-image {
+  border: 2px solid hotpink;
+}
+.about-image img {
+  
+  
+}
 
 .about-box {
-  font-size: 36px;
-  padding: 80px;
+  font-size: 2em;
+  padding: 0px;
   background-color: #fec91d;
+  height: 100%;
+  border: 2px solid greenyellow;
 }
 
 .about-box p {
   margin-top: 15%;
+}
+.about-container {
+  border: 2px solid orange;
 }
