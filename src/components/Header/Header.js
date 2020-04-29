@@ -4,22 +4,21 @@ import Logo from '../../Images/al_di_la_logo.svg'
 import Hero from '../../Images/Hero.png'
 import "../Header/Header.css"
 
-export default class Header extends Component {
-  scrollToTop = () => {
+export default function Header({ id }) {
+  const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
-  render() {
-    return (
-      <header>
+  return (
+    <header id={id}>
       <nav className="nav" id="navbar">
         <div className="nav-content">
-          
+
           <ul className="nav-items">
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section1"
+                to="brunch"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -49,7 +48,7 @@ export default class Header extends Component {
                 offset={-70}
                 duration={500}
               >
-                <img src={Logo} alt="logo"/>
+                <img src={Logo} alt="logo" />
               </Link>
             </li>
             <li className="nav-item">
@@ -79,10 +78,15 @@ export default class Header extends Component {
           </ul>
         </div>
       </nav>
-      <div style={{ backgroundImage: "url(" + Hero + ")", backgroundSize: "cover", height: "80vh" }}></div>
-      </header>
-    );
-  }
+      {/* <div style={{ backgroundImage: "url(" + Hero + ")", backgroundSize: "cover", height: "80vh", backgroundPosition: "center" }}> */}
+      <div className="hero-text-container">
+        <h1 className="hero-text">A Taste of Northern Italy</h1>
+        <button className="order-button">order here</button>
+        <img src={Hero} width="100%" height="100%"/>
+      </div>
+      {/* </div> */}
+    </header>
+  );
 }
 
 

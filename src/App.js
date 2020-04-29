@@ -14,12 +14,12 @@ import Press from './components/Press/Press.js'
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Menu id="section1" />
-      <ImageArray id="section3"/>
+      <Header id="section3" />
+      <Menu id="brunch" />
+      <ImageArray />
       <Visit id="section2" />
-      <About id="section4"/>
-      <Press id="section5"/>
+      <About id="section4" />
+      <Press id="section5" />
       <Footer />
     </div>
   );
