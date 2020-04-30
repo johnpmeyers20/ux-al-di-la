@@ -3,3 +3,9 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.image-array-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
