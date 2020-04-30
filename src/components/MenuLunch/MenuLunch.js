@@ -7,28 +7,28 @@ const MenuLunch = (props) => {
   console.log(items);
   return (
     <div className="menu-container">
-      <h3 className="menu-section-title">Antipasti</h3>
+      <h3 className="dish-title">Antipasti</h3>
       {items.filter(item => item.type === "Antipasti").map(item => {
         return (
           <div>
             <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
           </div>)
       })}
-      <h3 className="menu-section-title">Panini</h3>
+      <h3 className="dish-title">Panini</h3>
       {items.filter(item => item.type === "Panini").map(item => {
         return (
           <div>
             <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
           </div>)
       })}
-      <h3 className="menu-section-title">Pasta</h3>
+      <h3 className="dish-title">Pasta</h3>
       {items.filter(item => item.type === "Pasta").map(item => {
         return (
           <div>
             <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
           </div>)
       })}
-      <h3 className="menu-section-title">Piatti Caldi</h3>
+      <h3 className="dish-title">Piatti Caldi</h3>
       {items.filter(item => item.type === "Piatti Caldi").map(item => {
         return (
           <div>
