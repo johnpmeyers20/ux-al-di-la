@@ -87,7 +87,7 @@ export default function Header({ id }) {
       <div className="hero-text-container">
         <h1 className="hero-text">A Taste of Northern Italy</h1>
         <button className="order-button">order here</button>
-        <img src={Hero} width="100%" height="100%" />
+        <img className="hero-image" src={Hero} alt="" width="100%" height="100%" />
       </div>
       {/* </div> */}
     </header>

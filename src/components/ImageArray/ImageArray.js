@@ -7,7 +7,7 @@ import Food4 from "../../Images/Food-4.png"
 
 const ImageArray = () => {
   return (
-    <div>
+    <div className="image-array-container">
       <img src={Food1} alt='dish one' />
       <img src={Food2} alt='dish two' />
       <img src={Food3} alt='dish three' />

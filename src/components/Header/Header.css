@@ -81,6 +81,10 @@
   justify-content: center;
 }
 
+.hero-image {
+  margin-top: 50px;
+}
+
 /* .section-dark {
   background: #333;
   color: white;

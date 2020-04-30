@@ -1,0 +1,5 @@
+.image-array-container {
+  margin-bottom: 44px;
+  display: flex;
+  justify-content: space-evenly;
+}
