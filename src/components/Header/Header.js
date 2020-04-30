@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Logo from '../../Images/al_di_la_logo.svg'
-import Hero from '../../Images/Hero.png'
+import Hero from '../../Images/Hero-edit.png'
 import "../Header/Header.css"
 
 export default function Header({ id }) {
