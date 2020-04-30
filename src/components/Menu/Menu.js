@@ -1,7 +1,7 @@
 import React from 'react'
 import './Menu.css'
 import { Component } from 'react'
-import { Link, Route } from 'react-router-dom'
+import { NavLink, Route } from 'react-router-dom'
 import MenuBrunch from '../MenuBrunch/MenuBrunch'
 import MenuLunch from '../MenuLunch/MenuLunch'
 import MenuDinner from '../MenuDinner/MenuDinner'
@@ -15,24 +15,30 @@ class Menu extends Component {
     super()
     this.state = {
       menus: Menus,
-      active: false
+      // active: false
     }
   }
 
-  toggleSelected = () => {
-    this.setState({active: !this.state.active})
-  }
+  // toggleSelected = () => {
+  //   this.setState({active: !this.state.active})
+  // }
 
   render() {
     console.log(this.state.menus.Dinner)
 
     return (
       <div>
+        {/* <nav className='menu-nav-container'>
+          <NavLink activeClassName={ this.state.active ? "selected" : "" } className="menu-section-title" onClick={this.toggleSelected} id="brunch" to='/'>brunch</NavLink>
+          <NavLink activeClassName={ this.state.active ? "selected" : "" } className="menu-section-title" onClick={this.toggleSelected} id="lunch" to='/lunch-menu'>lunch</NavLink>
+          <NavLink activeClassName={ this.state.active ? "selected" : "" } className="menu-section-title" onClick={this.toggleSelected} id="dinner" to='/dinner-menu'>dinner</NavLink>
+          <NavLink activeClassName={ this.state.active ? "selected" : "" } className="menu-section-title" onClick={this.toggleSelected} id="dessert" to='/dessert-menu'>dessert</NavLink>
+        </nav> */}
         <nav className='menu-nav-container'>
-          <Link className={ this.state.active ? "menu-section-title selected" : "menu-section-title" } onClick={this.toggleSelected} id="brunch" to='/'>brunch</Link>
-          <Link className={ this.state.active ? "menu-section-title selected" : "menu-section-title" } onClick={this.toggleSelected} id="lunch" to='/lunch-menu'>lunch</Link>
-          <Link className={ this.state.active ? "menu-section-title selected" : "menu-section-title" } onClick={this.toggleSelected} id="dinner" to='/dinner-menu'>dinner</Link>
-          <Link className={ this.state.active ? "menu-section-title selected" : "menu-section-title" } onClick={this.toggleSelected} id="dessert" to='/dessert-menu'>dessert</Link>
+          <NavLink className="menu-section-title" activeClassName="selected" id="brunch" exact to='/'>brunch</NavLink>
+          <NavLink className="menu-section-title" activeClassName="selected" id="lunch" exact to='/lunch-menu'>lunch</NavLink>
+          <NavLink className="menu-section-title" activeClassName="selected" id="dinner" exact to='/dinner-menu'>dinner</NavLink>
+          <NavLink className="menu-section-title" activeClassName="selected" id="dessert" exact to='/dessert-menu'>dessert</NavLink>
         </nav>
         <div className='current-menu'>
           <Route exact path='/' render={() => <MenuBrunch menu={this.state.menus.Brunch} />} />
