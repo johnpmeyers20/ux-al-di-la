@@ -5,17 +5,31 @@ about {
   line-height: 1.25;
 }
 
+.about-container {
+  max-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .about-image, .about-box {
   width: 50%;
-  height: 60vh;
 } 
 
 .about-box {
-  font-size: 36px;
-  padding: 80px;
+  font-size: calc(13px + (36 - 13) * ((100vw - 300px) / (1440 - 300)));
   background-color: #fec91d;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
 }
 
 .about-box p {
-  margin-top: 15%;
+  /* margin: 15%; */
+  margin: auto 12%;
+}
+
+.about-image img {
+  object-fit: cover;
 }
