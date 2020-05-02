@@ -7,10 +7,6 @@ press {
   align-items: center;
 }
 
-.press-container {
-  border: 2px solid hotpink;
-}
-
 .press-container img {
   display: block;
   width: 100%;
