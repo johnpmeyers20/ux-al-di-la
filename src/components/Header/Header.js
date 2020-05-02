@@ -10,17 +10,17 @@ import SideNav from '../SideNav/SideNav.js'
 export default function Header({ id }) {
 
   const [open, setOpen] = useState(false);
-  const node = useRef(); 
+  const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
 
   return (
     <header id={id}>
       <nav className="nav" id="navbar">
-          
+
         <div className="nav-content">
           <div ref={node}>
-            <Burger open={open} setOpen={setOpen}/>
-            <SideNav open={open} setOpen={setOpen}/>
+            <Burger open={open} setOpen={setOpen} />
+            <SideNav open={open} setOpen={setOpen} />
           </div>
           <Link
             className="nav-item"
