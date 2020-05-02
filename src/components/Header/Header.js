@@ -1,21 +1,27 @@
-import React, { Component } from "react";
+import React, { useState, useRef } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useOnClickOutside } from '../../hooks';
 import Logo from '../../Images/al_di_la_logo.svg'
 import Hero from '../../Images/Hero-edit.png'
 import "../Header/Header.css"
+import Burger from '../Burger/Burger.js';
+import SideNav from '../SideNav/SideNav.js'
 
 export default function Header({ id }) {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+
+  const [open, setOpen] = useState(false);
+  const node = useRef(); 
+  useOnClickOutside(node, () => setOpen(false));
 
   return (
     <header id={id}>
       <nav className="nav" id="navbar">
+          
         <div className="nav-content">
-
-          {/* <ul className="nav-items"> */}
-            {/* <li className="nav-item"> */}
+          <div ref={node}>
+            <Burger open={open} setOpen={setOpen}/>
+            <SideNav open={open} setOpen={setOpen}/>
+          </div>
           <Link
             className="nav-item"
             activeClass="active"
@@ -43,7 +49,7 @@ export default function Header({ id }) {
           {/* </li> */}
           {/* <li className="nav-item"> */}
           <Link
-            className="nav-item"
+            className="nav-item-logo"
             activeClass="active"
             to="section3"
             spy={true}

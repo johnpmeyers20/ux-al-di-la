@@ -29,28 +29,40 @@
 }
 
 .selected {
-  border-bottom: 5px solid #fec91d;
+  border-bottom: 10px solid #fec91d;
 }
+
+.dish-type{
+  display: table-row-group;
+  font-family: "Brandon Bold";
+  font-size: 18px;
+}
+
 .menu-dish {
-  font-family: "Brandon";
+  font-family: 'Brandon Reg';
   font-size: 13px;
-  font-weight: normal;
+  /* font-weight: normal;
   font-stretch: normal;
-  font-style: normal;
+  font-style: normal; */
   line-height: normal;
   letter-spacing: normal;
-  color: black;
-  text-decoration: none;
+  /* color: black; */
+  /* text-decoration: none; */
   text-align: left;
   -webkit-column-break-inside: avoid;
-
   margin: 10px auto;
 }
 
-.menu-dish div {
+/* .menu-dish div {
   font-size: 13px;
-}
+} */
 
-.menu-section-title-dinner {
+/* .menu-section-title-dinner {
   border-bottom: 11px solid #fec91d;
+} */
+
+.dessert {
+  column-count: 2;
+  column-width: 60px;
+  max-width: 600px;
 }

@@ -6,8 +6,7 @@ const MenuDessert = (props) => {
   let items = props.menu.items;
   console.log(items);
   return (
-    <div className="menu-container">
-      <h3 className="menu-section-title">Dessert</h3>
+    <div className="menu-container dessert">
       {items.filter(item => item.type === "Dessert").map(item => {
         return (
           <div>
