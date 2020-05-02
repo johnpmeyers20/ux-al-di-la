@@ -46,11 +46,10 @@
 
 .hero-text {
   color: white;
-  font-size: 64px;
   text-transform: uppercase;
   position: absolute;
   display: block;
-  
+  font-size: calc(13px + (64 - 13) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .order-button {
@@ -80,6 +79,7 @@
 
 .hero-image {
   margin-top: 50px;
+  width: 100%;
 }
 
 

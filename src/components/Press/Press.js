@@ -9,7 +9,7 @@ import Press4 from "../../Images/Press-4.png"
 const Press = ({ id }) => {
 
   return (
-    <press id={id}>
+    <press className='press-container' id={id}>
       
         <a href="https://tmagazine.blogs.nytimes.com/2014/08/28/al-di-la-vino-sunday-night-dinner/"><img src={Press1}/></a>
         <a href="https://www.cntraveler.com/restaurants/brooklyn/al-di-la-trattoria"><img src={Press2}/></a>

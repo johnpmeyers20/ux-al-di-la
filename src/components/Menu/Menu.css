@@ -66,3 +66,7 @@
   column-width: 60px;
   max-width: 600px;
 }
+
+.menu-container {
+  overflow: hidden;
+}
