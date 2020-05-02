@@ -1,22 +1,6 @@
-<<<<<<< HEAD
-import React,
-{
-  Component
-}
-
-  from "react";
-
-import {
-  Link,
-  animateScroll as scroll
-}
-
-  from "react-scroll";
-=======
 import React, { useState, useRef } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useOnClickOutside } from '../../hooks';
->>>>>>> 3c9c5f99a06766e4be4d18d0e5da70f48a8af547
 import Logo from '../../Images/al_di_la_logo.svg'
 import Hero from '../../Images/Hero-edit.png'
 import "../Header/Header.css"
@@ -24,27 +8,19 @@ import Burger from '../Burger/Burger.js';
 import SideNav from '../SideNav/SideNav.js'
 
 export default function Header({ id }) {
-<<<<<<< HEAD
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  }
-
-    ;
-=======
 
   const [open, setOpen] = useState(false);
-  const node = useRef(); 
+  const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
->>>>>>> 3c9c5f99a06766e4be4d18d0e5da70f48a8af547
 
   return (
     <header id={id}>
       <nav className="nav" id="navbar">
-          
+
         <div className="nav-content">
           <div ref={node}>
-            <Burger open={open} setOpen={setOpen}/>
-            <SideNav open={open} setOpen={setOpen}/>
+            <Burger open={open} setOpen={setOpen} />
+            <SideNav open={open} setOpen={setOpen} />
           </div>
           <Link
             className="nav-item"
@@ -117,11 +93,7 @@ export default function Header({ id }) {
       <div className="hero-text-container">
         <h1 className="hero-text">A Taste of Northern Italy</h1>
         <button className="order-button">order here</button>
-<<<<<<< HEAD
-        <img src={Hero} width="100%" height="100%" />
-=======
         <img className="hero-image" src={Hero} alt="" width="100%" height="100%" />
->>>>>>> 3c9c5f99a06766e4be4d18d0e5da70f48a8af547
       </div>
       {/* </div> */}
     </header>

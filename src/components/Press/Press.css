@@ -12,3 +12,23 @@ press {
   width: 100%;
   height: auto;
 }
+
+@media only screen and (max-width: 550px) {
+  .press-container {
+    padding: 7% 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .press-container a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .press-container img {
+    width: 72%;
+    margin: 10% 0px;
+
+  }
+}
