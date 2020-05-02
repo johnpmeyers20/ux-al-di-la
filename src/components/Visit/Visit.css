@@ -3,29 +3,29 @@ visit {
   justify-content: center;
 }
 
-.visit-container {
-  max-height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .visit-image, .visit-box {
   width: 50%;
 } 
 
 .visit-box {
-  /* font-size: 24px; */
   font-size: calc(13px + (24 - 13) * ((100vw - 300px) / (1440 - 300)));
   background-color: #fec91d;
+  display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.visit-box-text {
-  padding: 0px 85px;
-  text-align: center;
+.visit-box p {
+  margin: auto 12%;
 }
+
 .visit-image img {
   object-fit: cover;
+}
+
+.visit-container {
+  max-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
