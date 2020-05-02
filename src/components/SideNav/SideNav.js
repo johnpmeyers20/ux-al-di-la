@@ -1,11 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link, Route } from 'react-router-dom'
 // import './SideNav.css'
 // import { StyledNav } from './SideNav.styled.js';
-import styled from "styled-components";
+import styled from 'styled-components';
+
 
 const StyledNav = styled.nav`
-  background-color: #fec91d;
+background-color: #fec91d;
   width: 400px;
   position: fixed;
   top: 55px;
@@ -30,13 +31,17 @@ const StyledNav = styled.nav`
 `;
 
 const SideNav = ({ open }) => {
+  
+
   return (
     <StyledNav open={open}>
-      <Link to="brunch">menu</Link>
-      <Link to="section2">visit</Link>
-      <Link to="section4">about</Link>
-      <Link to="section5">press</Link>
+      
+      <Link to="/brunch">menu</Link>
+      <Link to="/section2">visit</Link>
+      <Link to="/section4">about</Link>
+      <Link to="/section5">press</Link>
+      
     </StyledNav>
-  );
-};
+  )
+}
 export default SideNav;

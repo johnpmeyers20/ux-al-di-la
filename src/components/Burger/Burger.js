@@ -12,7 +12,7 @@ const Burger = ({ open, setOpen }) => {
     <button className="nav-toggle" open={open} onClick={() => setOpen(!open)}>
             <img src={HamburgerMenu}/>
     </button>
-    // </burger>
+    
   );
 }
 
