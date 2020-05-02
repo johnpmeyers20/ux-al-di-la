@@ -6,6 +6,7 @@ const MenuLunch = (props) => {
   let items = props.menu.items;
   console.log(items);
   return (
+    <>
     <div className="menu-container">
       <p className="dish-type">Antipasti</p>
       {items.filter(item => item.type === "Antipasti").map(item => {
@@ -35,7 +36,8 @@ const MenuLunch = (props) => {
             <div className="menu-dish"><strong>{item.dish}</strong> ${item.cost.toFixed(2)}<br />{item.caption}</div>
           </div>)
       })}
-    </div>
+      </div>
+      </>
   )
 }
 
