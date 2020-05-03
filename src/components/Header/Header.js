@@ -20,8 +20,9 @@ export default function Header({ id }) {
         <div className="nav-content">
           <div ref={node}>
             <Burger open={open} setOpen={setOpen} />
-            <SideNav open={open} setOpen={setOpen} />
+           <SideNav open={open}  /> 
           </div>
+          
           <Link
             className="nav-item"
             activeClass="active"
