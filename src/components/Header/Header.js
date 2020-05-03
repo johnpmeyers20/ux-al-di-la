@@ -16,81 +16,82 @@ export default function Header({ id }) {
   return (
     <header id={id}>
       <div className="nav" id="navbar">
-      
+
         {/* <div className="nav-content"> */}
         <div ref={node}>
-            <Burger open={open} setOpen={setOpen} />
-            <SideNav open={open}  /> 
-          </div>
-          
-          <Link
-            className="nav-item"
-            // activeClass="active"
-            to="brunch"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >menu
+          <Burger open={open} setOpen={setOpen} />
+          <SideNav open={open} />
+        </div>
+
+        <Link
+          className="nav-item"
+          // activeClass="active"
+          to="brunch"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >menu
               </Link>
-          {/* </li> */}
-          {/* <li className="nav-item"> */}
-          <Link
-            className="nav-item"
-            // activeClass="active"
-            to="section2"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            visit
+        {/* </li> */}
+        {/* <li className="nav-item"> */}
+        <Link
+          className="nav-item"
+          // activeClass="active"
+          to="section2"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          visit
               </Link>
-          {/* </li> */}
-          {/* <li className="nav-item"> */}
-          <Link
-            className="nav-item-logo"
-            // activeClass="active"
-            to="section3"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            <img src={Logo} alt="logo" />
+        {/* </li> */}
+        {/* <li className="nav-item"> */}
+        <Link
+          className="nav-item-logo"
+          // activeClass="active"
+          to="section3"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <img src={Logo} alt="logo" />
+        </Link>
+        {/* </li> */}
+        {/* <li className="nav-item"> */}
+        <Link
+          className="nav-item"
+          // activeClass="active"
+          to="section4"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          about
+              </Link>
+        {/* </li> */}
+        {/* <li className="nav-item"> */}
+        <Link
+          className="nav-item"
+          // activeClass="active"
+          to="section5"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          press
           </Link>
-          {/* </li> */}
-          {/* <li className="nav-item"> */}
-          <Link
-            className="nav-item"
-            // activeClass="active"
-            to="section4"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            about
-              </Link>
-          {/* </li> */}
-          {/* <li className="nav-item"> */}
-          <Link
-            className="nav-item"
-            // activeClass="active"
-            to="section5"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            press
-          </Link>
-          {/* </li> */}
-          {/* </ul> */}
+        {/* </li> */}
+        {/* </ul> */}
         {/* </div> */}
       </div>
       {/* <div style={{ backgroundImage: "url(" + Hero + ")", backgroundSize: "cover", height: "80vh", backgroundPosition: "center" }}> */}
       <div className="hero-text-container">
+
         <h1 className="hero-text">A Taste of Northern Italy</h1>
         <button className="order-button">order here</button>
         <img className="hero-image" src={Hero} alt="" width="100%" height="100%" />
