@@ -1,14 +1,12 @@
 .nav-toggle {
   display: none;
-  /* width: 0; */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   
   .nav-toggle {
     display: block;
-    /* width: 18px; */
-    margin-right: 35vw;
+    margin-right: 30vw;
     margin-left: 12px;
   }
 }
