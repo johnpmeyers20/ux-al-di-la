@@ -30,7 +30,7 @@ const SideNav = ({ open }) => {
   return (
     <StyledNav open={open}>
       <Link
-        className="nav-item"
+        // className="nav-item"
         to="brunch"
         spy={true}
         smooth={true}
@@ -41,7 +41,7 @@ const SideNav = ({ open }) => {
       </Link>
          
       <Link
-        className="nav-item"
+        // className="nav-item"
         to="section2"
         spy={true}
         smooth={true}
@@ -52,7 +52,7 @@ const SideNav = ({ open }) => {
       </Link>
         
       <Link
-        className="nav-item"
+        // className="nav-item"
         to="section4"
         spy={true}
         smooth={true}
@@ -63,7 +63,7 @@ const SideNav = ({ open }) => {
       </Link>
           
       <Link
-        className="nav-item"
+        // className="nav-item"
         to="section5"
         spy={true}
         smooth={true}
