@@ -72,18 +72,25 @@
   .nav-item {
     display: none;
   }
-/* 
-  .nav .nav-content {
-    justify-content: flex-start;
-  } */
-  
+
   .hero-text-container img {
     object-fit: cover;
+    height: 50vh;
   }
-  
+
+  .hero-text {
+    position: absolute;
+    bottom: 20%;
+    font-size: 1.6em;
+  }
+
   .order-button {
-    padding: 1px 40px;
+    position: absolute;
+    padding: 1px 50px;
     font-size: 14px;
-    /* margin-top: 10%; */
+    bottom: 10%;
+    border: 2px solid white;
   }
+
+
 }

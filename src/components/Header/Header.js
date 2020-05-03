@@ -75,8 +75,10 @@ export default function Header({ id }) {
           >press
           </Link>
       </nav>
+
       {/* <div style={{ backgroundImage: "url(" + Hero + ")", backgroundSize: "cover", height: "80vh", backgroundPosition: "center" }}> */}
       <div className="hero-text-container">
+
         <h1 className="hero-text">A Taste of Northern Italy</h1>
         <button className="order-button">order here</button>
         <img className="hero-image" src={Hero} alt="" width="100%" height="100%" />
@@ -85,22 +87,6 @@ export default function Header({ id }) {
     </header>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // import React from 'react'
