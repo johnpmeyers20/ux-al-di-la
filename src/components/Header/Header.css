@@ -44,6 +44,12 @@
   font-family: 'Brandon Reg';
   display: block;
   margin-top: 10%;
+  
+}
+
+.order-button a{
+  text-decoration: none;
+  color: white;
 }
 
 .order-button:hover {
