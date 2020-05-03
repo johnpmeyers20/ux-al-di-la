@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+// import { NavLink } from 'react-router-dom';
 import { useOnClickOutside } from '../../hooks';
 import Logo from '../../Images/al_di_la_logo.svg'
 import Hero from '../../Images/Hero-edit.png'
@@ -15,80 +16,66 @@ export default function Header({ id }) {
 
   return (
     <header id={id}>
-      <div className="nav" id="navbar">
-
-        {/* <div className="nav-content"> */}
+      <nav className="nav">
+     
         <div ref={node}>
-          <Burger open={open} setOpen={setOpen} />
-          <SideNav open={open} />
-        </div>
-
-        <Link
+            <Burger open={open} setOpen={setOpen} />
+            <SideNav open={open}  /> 
+          </div>
+          
+          <Link
           className="nav-item"
           // activeClass="active"
-          to="brunch"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >menu
-              </Link>
-        {/* </li> */}
-        {/* <li className="nav-item"> */}
-        <Link
-          className="nav-item"
-          // activeClass="active"
-          to="section2"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          visit
-              </Link>
-        {/* </li> */}
-        {/* <li className="nav-item"> */}
-        <Link
-          className="nav-item-logo"
-          // activeClass="active"
-          to="section3"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          <img src={Logo} alt="logo" />
-        </Link>
-        {/* </li> */}
-        {/* <li className="nav-item"> */}
-        <Link
-          className="nav-item"
-          // activeClass="active"
-          to="section4"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          about
-              </Link>
-        {/* </li> */}
-        {/* <li className="nav-item"> */}
-        <Link
-          className="nav-item"
-          // activeClass="active"
-          to="section5"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          press
+            to="brunch"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >menu
           </Link>
-        {/* </li> */}
-        {/* </ul> */}
-        {/* </div> */}
-      </div>
+
+          <Link
+          className="nav-item"
+          // activeClass="active"
+            to="section2"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >visit
+          </Link>
+          <Link
+            className="nav-item-logo"
+            to="section3"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+          <img src={Logo} alt="logo" />
+          </Link>
+          <Link
+            className="nav-item"
+            // activeClass="active"
+            to="section4"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >about</Link>
+          
+          <Link
+            className="nav-item"
+            // activeClass="active"
+            to="section5"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >press
+          </Link>
+      </nav>
+
       {/* <div style={{ backgroundImage: "url(" + Hero + ")", backgroundSize: "cover", height: "80vh", backgroundPosition: "center" }}> */}
       <div className="hero-text-container">
 
@@ -100,22 +87,6 @@ export default function Header({ id }) {
     </header>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // import React from 'react'
