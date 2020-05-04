@@ -331,13 +331,13 @@
         "type": "Contorni",
         "dish": "",
         "cost": 10,
-        "caption": "Crushed Yukon Gold Potatoes; Grilled Spring Onions, lemon, mint; Grilled Swiss Chard Stems, anchovy vinaigrette; Creamy Polenta, parmigiano;"
+        "caption": "Crushed Yukon Gold Potatoes; Grilled Spring Onions, lemon, mint; Grilled Swiss Chard Stems, anchovy vinaigrette; Creamy Polenta, parmigiano"
       },
       {
         "type": "Contorni",
         "dish": "Contorni cont.",
         "cost": 8,
-        "caption": "Braised Greens, garlic, chili, lemon; Baby Carrots, yogurt, honey;"
+        "caption": "Braised Greens, garlic, chili, lemon; Baby Carrots, yogurt, honey"
       }
     ]
   },
