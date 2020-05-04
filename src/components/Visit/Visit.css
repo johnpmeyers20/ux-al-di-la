@@ -1,6 +1,8 @@
 visit {
   display: flex;
   justify-content: center;
+  max-height: 500px;
+  width: 100%;
 }
 
 .visit-image,
@@ -24,12 +26,12 @@ visit {
   object-fit: cover;
 }
 
-.visit-container {
+/* .visit-container {
   max-height: 500px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
 @media only screen and (max-width: 550px) {
   .visit-container {
@@ -49,4 +51,11 @@ visit {
     font-weight: 500;
   }
 
+}
+
+@media only screen and (max-width: 380px) {
+
+  .visit-box {
+    padding: 30px;
+  }
 }
