@@ -25,7 +25,7 @@ export default function Header({ id }) {
           
           <Link
           className="nav-item"
-          // activeClass="active"
+          activeClass="active"
             to="brunch"
             spy={true}
             smooth={true}
@@ -36,7 +36,7 @@ export default function Header({ id }) {
 
           <Link
           className="nav-item"
-          // activeClass="active"
+          activeClass="active"
             to="section2"
             spy={true}
             smooth={true}
@@ -56,7 +56,7 @@ export default function Header({ id }) {
           </Link>
           <Link
             className="nav-item"
-            // activeClass="active"
+            activeClass="active"
             to="section4"
             spy={true}
             smooth={true}
@@ -66,7 +66,7 @@ export default function Header({ id }) {
           
           <Link
             className="nav-item"
-            // activeClass="active"
+            activeClass="active"
             to="section5"
             spy={true}
             smooth={true}

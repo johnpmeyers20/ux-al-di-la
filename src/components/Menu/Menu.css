@@ -5,6 +5,7 @@
   justify-content: space-around;
   padding: 25px 25%;
 }
+
 .menu-container {
   margin: 0 auto;
   max-width: 1015px;
@@ -12,6 +13,7 @@
   column-count: 5;
   column-gap: 60px;
 }
+
 .menu-section-title {
   font-family: "Brandon Reg";
   font-size: 26px;
@@ -19,15 +21,22 @@
   text-decoration: none;
   text-align: left;
   margin-right: 25px;
+  -webkit-column-break-inside: avoid;
+
 }
+
 .selected {
   border-bottom: 10px solid #fec91d;
 }
-.dish-type{
+
+.dish-type {
   display: table-row-group;
   font-family: "Brandon Bold";
   font-size: 18px;
+  -webkit-column-break-inside: avoid;
+
 }
+
 .menu-dish {
   font-family: 'Brandon Reg';
   font-size: 13px;
@@ -37,14 +46,17 @@
   -webkit-column-break-inside: avoid;
   margin: 10px auto;
 }
+
 .dessert {
   column-count: 2;
   column-width: 60px;
   max-width: 600px;
 }
+
 .menu-container {
   overflow: hidden;
 }
+
 @media only screen and (max-width: 550px) {
   .menu-container {
     margin: 0 25px;
@@ -53,8 +65,16 @@
     column-count: 2;
     column-gap: 30px;
   }
+
   .selected {
     border-bottom: 10px solid #fec91d;
-    
+
   }
+}
+
+@media only screen and (max-width: 375px) {
+  .menu-container {
+    margin: 0 5.5px;
+  }
+
 }
