@@ -6,7 +6,7 @@ const StyledNav = styled.nav`
 background-color: #fec91d;
 width: 260px;
 position:fixed;
-top: 55px;
+top: 56px;
 left:0;
 height:30%;
 transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
