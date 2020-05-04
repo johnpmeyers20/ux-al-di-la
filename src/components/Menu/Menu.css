@@ -12,6 +12,8 @@
   height: 412px;
   column-count: 5;
   column-gap: 60px;
+  -webkit-column-span: all; 
+  column-span: all;
 }
 
 .menu-section-title {
