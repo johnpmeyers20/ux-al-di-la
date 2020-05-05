@@ -12,6 +12,8 @@
   height: 412px;
   column-count: 5;
   column-gap: 60px;
+  -webkit-column-span: all; 
+  column-span: all;
 }
 
 .menu-section-title {
@@ -20,7 +22,8 @@
   color: black;
   text-decoration: none;
   text-align: left;
-  margin-right: 25px;
+  /* margin-right: 25px; */
+  margin: 0 3vw;
   -webkit-column-break-inside: avoid;
 
 }
@@ -76,5 +79,7 @@
   .menu-container {
     margin: 0 5.5px;
   }
-
+  .menu-section-title {
+    margin: 0 1.5vw;
+  }
 }
