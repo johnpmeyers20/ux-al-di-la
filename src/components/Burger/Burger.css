@@ -6,16 +6,19 @@
 
   .nav-toggle {
     display: block;
-    margin-right: 33vw;
+    margin-right: 35vw;
     margin-left: 12px;
   }
 }
+@media (max-width: 420px) {
 
+  .nav-toggle {
+    margin-right: 32vw;
+  }
+}
 @media (max-width: 375px) {
 
   .nav-toggle {
-    display: block;
-    margin-right: 30vw;
-    margin-left: 12px;
+    margin-right: 29vw;
   }
 }

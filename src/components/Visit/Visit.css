@@ -13,25 +13,28 @@ visit {
 .visit-box {
   font-size: calc(13px + (24 - 13) * ((100vw - 300px) / (1440 - 300)));
   background-color: #fec91d;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 .visit-box p {
-  margin: auto 12%;
+  margin: 20px 12%;
 }
 
 .visit-image img {
   object-fit: cover;
 }
 
-/* .visit-container {
-  max-height: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-} */
+@media only screen and (max-width: 770px) {
+  
+  .visit-box {
+    font-size: .9em;
+    font-weight: 500;
+  }
+
+  .visit-box p {
+    margin: 10px 7px;
+  }
+
+}
 
 @media only screen and (max-width: 550px) {
   .visit-container {
@@ -40,29 +43,21 @@ visit {
   }
 
   .visit-image {
-    height: 382px;
     width: 100%;
   }
 
   .visit-box {
     width: 100%;
     height: auto;
-    font-size: .8em;
+    font-size: 18px;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 10px 20px;
   }
-
-  .visit-box p {
-    margin: 7px;
-  }
-
 }
 
 @media only screen and (max-width: 380px) {
 
   .visit-box {
-    padding: 30px;
+   font-size: 14px;
   }
 }
