@@ -4,7 +4,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  /* height: 35px; */
 }
 
 .fb-link {
@@ -26,13 +25,16 @@ footer {
 }
 
 @media only screen and (max-width : 375px) {
+  footer {
+    padding: 10px 10px;
+  }
+
   .fb-link {
-    height: 31px;
-    width: auto;
+    height: 25px;
+    margin-right: 10px;
   }
 
   .ig-link {
-    height: 26px;
-    width: auto;
+    height: 20px;
   }
 }

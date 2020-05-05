@@ -4,8 +4,7 @@ import Map from "../../Images/Map.png"
 
 export default function Visit({ id }) {
   return (
-
-    <visit className='visit-container' id={id}>
+      <visit className='visit-container' id={id}>
       <div className='visit-image'>
         <img src={Map} alt="" width="100%" height="100%" />
       </div>

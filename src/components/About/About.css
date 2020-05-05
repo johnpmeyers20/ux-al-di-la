@@ -27,7 +27,7 @@ about {
 }
 
 .about-box p {
-  /* margin: 15%; */
+  margin: 15%;
   margin: auto 12%;
 }
 
@@ -57,3 +57,25 @@ about {
     width: 100%;
   }
 }
+/* 
+  about {
+  display: flex;
+  justify-content: center;
+  font-family: 'Brandon Bold';
+  line-height: 1.25;
+}
+
+.about-image, .about-box {
+  width: 50%;
+  height: 60vh;
+} 
+
+.about-box {
+  font-size: 36px;
+  padding: 80px;
+  background-color: #fec91d;
+}
+
+.about-box p {
+  margin-top: 15%;
+} */
